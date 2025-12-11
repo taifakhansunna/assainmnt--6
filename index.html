@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eDex figma design to code</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.25.1/dist/css/uikit.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header>
+      <div class="wrapper">
+        <nav class="navbar">
+          <a href="/" class="navbar-logo"
+            ><img
+              class="navbar-logo_img"
+              src="photo/eDex.png"
+              width="134"
+              height="40"
+              alt="eDex"
+          /></a>
+          <ul class="navbar-menu">
+            <li class="navbar-menu_items"><a href="#"> Home </a></li>
+            <li class="navbar-menu_items">
+              <a href="#"> About </a>
+            </li>
+            <li class="navbar-menu_items">
+              <a href="#"> Course </a>
+            </li>
+            <li class="navbar-menu_items"><a href="#"> Blog </a></li>
+            <li class="navbar-menu_items"><a href="#"> Contact </a></li>
+          </ul>
+          <div class="navbar-buttons">
+            <button class="btn btn-transparent navbar-button_login">
+              <a href="/login">
+                <img
+                  src="photo/Lock.png"
+                  alt="lock"
+                  width="16"
+                  height="16"
+                /><span> Login </span></a
+              >
+            </button>
+            <button class="btn btn-primary">
+              <a href="/login">Sign up for Free</a>
+            </button>
+          </div>
+          <i class="fas fa-bars d-block d-md-none"></i>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <div class="hero-content">
+                <div class="hero_content-tag">START TO SUCCESS</div>
+                <h2 class="hero_content-heading">
+                  Access To 5000+ Courses from 300 Instructors & Institutions
+                </h2>
+                <p class="hero_content-paragraph">
+                  Various versions have evolved over the years, sometimes by
+                  accident,
+                </p>
+                <div class="hero_content-input-wrapper">
+                  <input
+                    type="text"
+                    class="hero_content-input"
+                    placeholder="What do want to learn?"
+                  />
+                  <button class="hero_content-input-btn">
+                    <img
+                      src="photo/MagnifyingGlass.png"
+                      alt="MagnifyingGlass"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="hero-image">
+                <img src="photo/Saly-10.png" alt="saly-10" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="stats" class="stats">
+        <div class="wrapper stats-items">
+          <div class="stats-item">
+            <img src="photo/Frame 67.png" alt="Education" />
+            <div class="stats-item_content">
+              <h3>300</h3>
+              <p>Instructor</p>
+            </div>
+          </div>
+          <div class="stats-item">
+            <img src="photo/Frame 67 (1).png" alt="Student" />
+            <div class="stats-item_content">
+              <h3>20,000+</h3>
+              <p>Student</p>
+            </div>
+          </div>
+          <div class="stats-item">
+            <img src="photo/Frame 67 (2).png" alt="Video" />
+            <div class="stats-item_content">
+              <h3>10,000+</h3>
+              <p>Video</p>
+            </div>
+          </div>
+          <div class="stats-item">
+            <img src="photo/Frame 67 (3).png" alt="Video" />
+            <div class="stats-item_content">
+              <h3>1,00,000+</h3>
+              <p>User’s</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular uk-section">
+        <div class="uk-container">
+          <div class="section-header">
+            <h2 class="sec1">
+              <span style="font-size: 45px;" class="most-color">Most</span>
+              <span style="font-size: 45px;" class="popular-color">Popular Courses</span>
+            </h2>
+            <h2 class="sec2"></h2>
+            <p>Explore most in-demand and trending courses</p>
+          </div>
+
+          <div
+            uk-slider="center: true; autoplay: true; autoplay-interval: 4000"
+          >
+            <div class="uk-position-relative">
+              <div class="uk-slider-container">
+                <ul
+                  class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small"
+                >
+                  <!-- CARD 01 -->
+                  <li>
+                    <div class="course-card uk-card uk-card-default">
+                      <div class="course-thumb">
+                        <img src="photo/Saly-1 (1).png" alt="" />
+                      </div>
+                      <div class="uk-card-body">
+                        <h4 class="course-title">
+                          Various versions have evolved...
+                        </h4>
+                        <div class="course-meta">
+                          <div class="rating">
+                            <img src="photo/Frame 19.png" alt="" />
+
+                            <span class="count">(15)</span>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="price-section">
+                        <div class="price">$500</div>
+                        <button class="price-btn">
+                          <img
+                            src="photo/ArrowUpRight.png"
+                            alt="ArrowUpRight"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- CARD 02 -->
+                  <li>
+                    <div class="course-card uk-card uk-card-default">
+                      <div class="course-thumb">
+                        <img src="photo/Sample 46.png" alt="" />
+                      </div>
+                      <div class="uk-card-body">
+                        <h4 class="course-title">
+                          Various versions have evolved...
+                        </h4>
+                        <div class="course-meta">
+                          <div class="rating">
+                            <img src="photo/Frame 19.png" alt="" />
+
+                            <span class="count">(15)</span>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="price-section">
+                        <div class="price">$500</div>
+                        <button class="price-btn active">
+                          <img
+                            src="photo/ArrowUpRight.png"
+                            alt="ArrowUpRight"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- CARD 03 -->
+                  <li>
+                    <div class="course-card uk-card uk-card-default">
+                      <div class="course-thumb">
+                        <img src="photo/Sample 26.png" alt="" />
+                      </div>
+                      <div class="uk-card-body">
+                        <h4 class="course-title">
+                          Various versions have evolved...
+                        </h4>
+                        <div class="course-meta">
+                          <div class="rating">
+                            <img src="photo/Frame 19.png" alt="" />
+
+                            <span class="count">(15)</span>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="price-section">
+                        <div class="price">$500</div>
+                        <button class="price-btn">
+                          <img
+                            src="photo/ArrowUpRight.png"
+                            alt="ArrowUpRight"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- CARD 04 -->
+                  <li>
+                    <div class="course-card uk-card uk-card-default">
+                      <div class="course-thumb">
+                        <img src="photo/Sample 12.png" alt="" />
+                      </div>
+                      <div class="uk-card-body">
+                        <h4 class="course-title">
+                          Various versions have evolved...
+                        </h4>
+                        <div class="course-meta">
+                          <div class="rating">
+                            <img src="photo/Frame 19.png" alt="" />
+                            <span class="count">(15)</span>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="price-section">
+                        <div class="price">$500</div>
+                        <button class="price-btn">
+                          <img
+                            src="photo/ArrowUpRight.png"
+                            alt="ArrowUpRight"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Controls -->
+              <a
+                class="uk-position-center-left-out uk-position-small"
+                href
+                uk-slidenav-previous
+                uk-slider-item="previous"
+              ></a>
+              <a
+                class="uk-position-center-right-out uk-position-small"
+                href
+                uk-slidenav-next
+                uk-slider-item="next"
+              ></a>
+            </div>
+
+            <!-- Dots -->
+            <ul
+              class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-top"
+            ></ul>
+          </div>
+        </div>
+      </section>
+      <section class="popular-category-section py-5">
+        <div class="container">
+          <!-- Heading -->
+          <div class="text-start mb-4">
+            <h2 class="fw-bold popular-title">
+              <h2 class="fw-bold popular-title">
+                <span class="black-most">Most</span>
+                <span class="blue-category">Popular Category</span>
+              </h2>
+            </h2>
+            <p class="popular-subtitle">
+              Various versions have evolved over the years, sometimes by
+              accident,
+            </p>
+          </div>
+
+          <!-- Category Grid -->
+
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="photo/PenNib.png" class="cat-icon" alt="" />
+                  <span class="cat-title">Design</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="photo/FileHtml.png" class="cat-icon" alt="" />
+                  <span class="cat-title">Development</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img
+                    src="photo/MicrophoneStage.png"
+                    class="cat-icon"
+                    alt=""
+                  />
+                  <span class="cat-title">Marketing</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="photo/Briefcase.png" class="cat-icon" alt="" />
+                  <span class="cat-title">Business</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="photo/SunHorizon.png" class="cat-icon" alt="" />
+                  <span class="cat-title">Lifestyle</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="photo/Camera.png" class="cat-icon" alt="" />
+                  <span class="cat-title">Photography</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="photo/MusicNote.png" class="cat-icon" alt="" />
+                  <span class="cat-title">Music</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="photo/Database.png" class="cat-icon" alt="" />
+                  <span class="cat-title">Data Science</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="photo/Lightbulb.png" class="cat-icon" alt="" />
+                  <span class="cat-title">Personal Development</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="photo/Heartbeat.png" class="cat-icon" alt="" />
+                  <span class="cat-title">Health & Fitness</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="photo/Graph.png" class="cat-icon" alt="" />
+                  <span class="cat-title">Finance</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="category-card">
+                <div class="d-flex align-items-center gap-3">
+                  <img src="photo/Detective.png" class="cat-icon" alt="" />
+                  <span class="cat-title">Teaching</span>
+                </div>
+                <button class="cat-btn">
+                  <img src="photo/ArrowUpRight (1).png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular uk-section">
+        <div class="uk-container">
+          <div class="section-header">
+            <h2>
+              <span style="font-size: 45px;" class="our-color">Our Best</span>
+              <span style="font-size: 45px;" class="instructor-color">Instructor</span>
+            </h2>
+            <p>
+              Various versions have evolved over the years, sometimes by
+              accident,
+            </p>
+          </div>
+
+          <div
+            uk-slider="center: true; autoplay: true; autoplay-interval: 4000"
+          >
+            <div class="uk-position-relative">
+              <div class="uk-slider-container">
+                <ul
+                  class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small"
+                >
+                  <!-- CARD 01 -->
+                  <li>
+                    <div class="course-card uk-card uk-card-default">
+                      <div class="course-thumb">
+                        <img src="photo/Rectangle 16.png" alt="" />
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="course-title">Jacob Jones</h3>
+                        <div class="course-meta">
+                          <p>UI-UX Design Expart</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- CARD 02 -->
+                  <li>
+                    <div class="course-card uk-card uk-card-default">
+                      <div class="course-thumb">
+                        <img src="photo/Rectangle 16 (1).png" alt="" />
+                      </div>
+                      <div class="uk-card-body">
+                        <h3 class="course-title">Jacob Jones</h3>
+                        <div class="course-meta">
+                          <p>Social Media Expart</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- CARD 03 -->
+                  <li>
+                    <div class="course-card uk-card uk-card-default">
+                      <div class="course-thumb">
+                        <img src="photo/Rectangle 16 (2).png" alt="" />
+                      </div>
+                      <div class="uk-card-body">
+                        <h4 class="course-title">Jacob Jones</h4>
+                        <p>Photograpy Expart</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="course-card uk-card uk-card-default">
+                      <div class="course-thumb">
+                        <img src="photo/Rectangle 16 (3).png" alt="" />
+                      </div>
+                      <div class="uk-card-body">
+                        <h4 class="course-title">Jacob Jones</h4>
+                        <div class="course-meta">
+                          <p>Business Idea Expart</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Controls -->
+              <a
+                class="uk-position-center-left-out uk-position-small"
+                href
+                uk-slidenav-previous
+                uk-slider-item="previous"
+              ></a>
+              <a
+                class="uk-position-center-right-out uk-position-small"
+                href
+                uk-slidenav-next
+                uk-slider-item="next"
+              ></a>
+            </div>
+
+            <!-- Dots -->
+            <ul
+              class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-top"
+            ></ul>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial uk-section">
+        <div class="uk-container">
+          <div class="section-header">
+            <h2>
+              <span style="font-size: 45px;" class="student-color">Student</span>
+              <span style="font-size: 45px;" class="feedback-color">Feedback</span>
+            </h2>
+            <p>
+              Various versions have evolved over the years, sometimes by
+              accident,
+            </p>
+          </div>
+
+          <div
+            uk-slider="center: true; autoplay: true; autoplay-interval: 4000"
+          >
+            <div class="uk-position-relative">
+              <div class="uk-slider-container">
+                <ul
+                  class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small"
+                >
+                  <!-- CARD 01 -->
+                  <li>
+                    <div
+                      class="course-card testimonial-card uk-card uk-card-default"
+                    >
+                      <div class="testimonials-thumb">
+                        <img src="photo/Rectangle 16.png" alt="" />
+                        <div class="uk-card-body">
+                          <h3 class="course-title">Guy Hawkins</h3>
+                          <div class="course-meta">
+                            <p>UI-UX Design Expart</p>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="testimonials-course-description">
+                        Ut pharetra ipsum nec leo blandit, sit amet tincidunt
+                        eros pharetra. Nam sed imperdiet turpis. In hac
+                        habitasse platea dictumst. Praesent nulla massa,
+                        hendrerit vestibulum gravida in, feugiat auctor felis.
+                      </p>
+                    </div>
+                  </li>
+
+                  <!-- CARD 02 -->
+                  <li>
+                    <div
+                      class="course-card testimonial-card uk-card uk-card-default"
+                    >
+                      <div class="testimonials-thumb">
+                        <img src="photo/Rectangle 25 (1).png" alt="" />
+                        <div class="uk-card-body">
+                          <h3 class="course-title">Guy Hawkins</h3>
+                          <div class="course-meta">
+                            <p>UI-UX Design Expart</p>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="testimonials-course-description">
+                        Ut pharetra ipsum nec leo blandit, sit amet tincidunt
+                        eros pharetra. Nam sed imperdiet turpis. In hac
+                        habitasse platea dictumst. Praesent nulla massa,
+                        hendrerit vestibulum gravida in, feugiat auctor felis.
+                      </p>
+                    </div>
+                  </li>
+
+                  <!-- CARD 03 -->
+                  <li>
+                    <div
+                      class="course-card testimonial-card uk-card uk-card-default"
+                    >
+                      <div class="testimonials-thumb">
+                        <img src="photo/Rectangle 25 (2).png" alt="" />
+                        <div class="uk-card-body">
+                          <h3 class="course-title">Guy Hawkins</h3>
+                          <div class="course-meta">
+                            <p>UI-UX Design Expart</p>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="testimonials-course-description">
+                        Ut pharetra ipsum nec leo blandit, sit amet tincidunt
+                        eros pharetra. Nam sed imperdiet turpis. In hac
+                        habitasse platea dictumst. Praesent nulla massa,
+                        hendrerit vestibulum gravida in, feugiat auctor felis.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      class="course-card testimonial-card uk-card uk-card-default"
+                    >
+                      <div class="testimonials-thumb">
+                        <img src="photo/Rectangle 25 (3).png" alt="" />
+                        <div class="uk-card-body">
+                          <h3 class="course-title">Guy Hawkins</h3>
+                          <div class="course-meta">
+                            <p>UI-UX Design Expart</p>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="testimonials-course-description">
+                        Ut pharetra ipsum nec leo blandit, sit amet tincidunt
+                        eros pharetra. Nam sed imperdiet turpis. In hac
+                        habitasse platea dictumst. Praesent nulla massa,
+                        hendrerit vestibulum gravida in, feugiat auctor felis.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Controls -->
+              <a
+                class="uk-position-center-left-out uk-position-small"
+                href
+                uk-slidenav-previous
+                uk-slider-item="previous"
+              ></a>
+              <a
+                class="uk-position-center-right-out uk-position-small"
+                href
+                uk-slidenav-next
+                uk-slider-item="next"
+              ></a>
+            </div>
+
+            <!-- Dots -->
+            <ul
+              class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-top"
+            ></ul>
+          </div>
+        </div>
+      </section>
+      <section class="cta-section py-5">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <!-- LEFT IMAGE -->
+            <div class="col-lg-6 text-center">
+              <img
+                src="photo/Saly-1 (3).png"
+                alt="Illustration"
+                class="img-fluid cta-image"
+              />
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="col-lg-6">
+              <h2 class="cta-title mb-3">
+                Join <span class="text-primary">World's largest</span> learning
+                platform today
+              </h2>
+
+              <p class="cta-subtitle mb-3">
+                Start learning by registering for free
+              </p>
+
+              <p class="cta-desc mb-4">
+                Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros
+                pharetra. Nam sed imperdiet turpis. In hac habitasse platea
+                dictumst. Praesent nulla massa, hendrerit vestibulum gravida in,
+                feugiat auctor felis.
+              </p>
+
+              <a href="#" class="btn btn-primary"> Sign up for Free </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <!-- Brand + Contact -->
+          <div class="footer-section">
+            <h2 class="footer-title"><img src="./photo/eDex.png" alt=""></h2>
+
+            <h3 class="footer-subtitle">Contact Us</h3>
+            <p class="footer-text">Call: +123 400 123</p>
+            <p class="footer-text mt-2">
+              Praesent nulla massa, hendrerit vestibulum gravida in, feugiat
+              auctor felis.
+            </p>
+            <p class="footer-text mt-2">Email: example@mail.com</p>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+            </div>
+          </div>
+
+          <!-- Explore -->
+          <div class="footer-section">
+            <h3 class="footer-subtitle">Explore</h3>
+            <ul class="footer-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Course</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Category -->
+          <div class="footer-section">
+            <h3 class="footer-subtitle">Category</h3>
+            <ul class="footer-list">
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Photography</a></li>
+              <li><a href="#">Music</a></li>
+            </ul>
+          </div>
+
+          <!-- Subscribe -->
+          <div class="footer-section">
+            <h3 class="footer-subtitle">Subscribe</h3>
+            <p class="footer-text mb-4">
+              Lorem Ipsum has been them an industry printer took a galley make
+              book.
+            </p>
+
+            <input
+              type="email"
+              placeholder="Email here"
+              class="subscribe-input"
+            />
+            <button class="subscribe-btn">Subscribe Now</button>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.1/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.1/dist/js/uikit-icons.min.js"></script>
+  <script
+    src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"
+  ></script>
+</html>
